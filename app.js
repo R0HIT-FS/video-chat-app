@@ -66,4 +66,4 @@ app.use(express.static(path.join(__dirname,"public")));
 
 app.use("/", indexRouter);
 
-server.listen(5000);
+server.listen(process.env.PORT || 5000);
